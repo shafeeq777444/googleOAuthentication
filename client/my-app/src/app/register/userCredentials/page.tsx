@@ -3,8 +3,8 @@
 
 import { AppDispatch } from "@/redux/app/store";
 import { getNewUserData, updateUserData } from "@/redux/features/authSlice";
-import { User } from "@/redux/types";
-import InputField from "@/components/InputField";
+// import { User } from "@/redux/types";
+import LoginInputField from "@/components/LoginInputField";
 import Image from "next/image";
 import { Formik, Form, } from "formik";
 import { useEffect, useState } from "react";
@@ -90,10 +90,10 @@ export default function UserCredentials() {
             <Form className="flex flex-col gap-1  w-4/5">
              
               
-              <InputField name="firstName" type="text" id="firstName" placeholder="First Name" className=""/>
-              <InputField name="lastName" type="text" id="lastName" placeholder="Last Name" className=""/>
-              <InputField name="userProfession" type="text" id="userProfession" placeholder="Profession" className=""/>
-              <InputField name="password" type="password" id="password" placeholder="Enter your Password" className=""/>
+              <LoginInputField name="firstName" type="text" id="firstName" placeholder="First Name" className=""/>
+              <LoginInputField name="lastName" type="text" id="lastName" placeholder="Last Name" className=""/>
+              <LoginInputField name="userProfession" type="text" id="userProfession" placeholder="Profession" className=""/>
+              <LoginInputField name="password" type="password" id="password" placeholder="Enter your Password" className=""/>
 
               {/* Submit Button */}
               <button
@@ -101,7 +101,7 @@ export default function UserCredentials() {
                 disabled={isSubmitting}
                 className="w-full bg-blue-500 text-white py-2 rounded-lg mt-3 hover:bg-blue-600 transition"
               >
-                {isSubmitting ? "Submitting..." : "Register"}
+                {isSubmitting ? "Register" : "Register"}
               </button>
             </Form>
           )}

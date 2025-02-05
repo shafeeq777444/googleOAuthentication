@@ -1,7 +1,7 @@
 import React from "react";
 import { useField, useFormikContext } from "formik";
 
-interface InputFieldProps {
+interface LoginInputFieldProps {
   name: string;
   id: string;
   type?: string;
@@ -9,7 +9,7 @@ interface InputFieldProps {
   placeholder?: string;
 }
 
-const InputField: React.FC<InputFieldProps> = ({
+const LoginInputField: React.FC<LoginInputFieldProps> = ({
   name,
   id,
   type = "text",
@@ -36,4 +36,4 @@ const InputField: React.FC<InputFieldProps> = ({
   );
 };
 
-export default InputField;
+export default LoginInputField;

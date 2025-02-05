@@ -2,7 +2,7 @@
 import GoogleSignInButton from "@/components/GoogleSignInButton";
 import { Formik, Form,} from "formik";
 import * as Yup from "yup";
-import InputField from "@/components/InputField";
+import LoginInputField from "@/components/LoginInputField";
 import Image from "next/image";
 export default function register() {
     return (
@@ -35,13 +35,13 @@ export default function register() {
                     >
                         {({ isSubmitting }) => (
                             <Form className="flex flex-col py-2 ">
-                                <InputField name="email" placeholder="Enter e-mail" id="email w-[100%]"></InputField>
+                                <LoginInputField name="email" placeholder="Enter e-mail" id="email w-[100%]"></LoginInputField>
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
                                     className="w-full bg-blue-500 text-white py-2 rounded-lg mt-3 hover:bg-blue-600 transition"
                                 >
-                                    {isSubmitting ? "Submitting..." : "Confirm & Continue"}
+                                    {isSubmitting ? "Confirm & Continue" : "Confirm & Continue"}
                                 </button>
                             </Form>
                         )}
