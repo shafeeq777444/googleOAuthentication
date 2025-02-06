@@ -14,7 +14,7 @@ export default function GoogleSignInButton() {
   return (
     <button onClick={handleGoogleSignIn} className="flex items-center justify-center w-[100%] px-4 py-2 border  bg-primaryDark rounded-2xl shadow-sm text-white  hover:bg-gray-900 transition">
       <FcGoogle className="text-2xl mr-2" />
-      <span className="text-white font-semibold text-sm">Sign in with Google</span>
+      <span className="text-white font-regular text-sm">Sign in with Google</span>
     </button>
   );
 }

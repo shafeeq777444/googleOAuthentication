@@ -28,7 +28,7 @@ const LoginInputField: React.FC<LoginInputFieldProps> = ({
         id={id}
         type={type}
         placeholder={showError ? meta.error : placeholder} // Show error inside input field
-        className={`border bg-pureWhite font-poppins font-medium text-sm px-3 py-4 rounded-xl w-full text-primaryDark
+        className={`border bg-pureWhite font-poppins font-medium text-sm px-3 py-[10px] rounded-xl w-full text-primaryDark
           placeholder-placeholder focus:outline-none active:outline-none 
           ${showError ? "border-red-500 text-red-700 placeholder-red-500" : "border-gray-300"}`}
       />

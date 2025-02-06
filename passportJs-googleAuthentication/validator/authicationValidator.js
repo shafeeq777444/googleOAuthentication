@@ -12,8 +12,8 @@ Joi.object({
     )
     .required(),
   userProfession: Joi.string().min(3).max(50).required(),
-  firstName:Joi.string(),
-  lastName:Joi.string(),
+  firstName:Joi.string().optional(),
+  lastName:Joi.string().optional(),
   profileCompleted:Joi.boolean()
 });
 

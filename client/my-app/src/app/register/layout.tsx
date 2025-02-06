@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "My App",
@@ -11,12 +12,10 @@ export default function AuthenticationLayout({ children }: { children: React.Rea
     <html lang="en">
       <body className="bg-white">
         {/* ✅ Corrected Image Path */}
-        <div className="flex justify-between items-center h-screen p-8   bg-[#FFFEFE]">
-      
-            <Image src="/auth.png" width={1200} height={300} priority alt="scrumX" className="rounded-[20px]   hidden xl-custom:block"  />
-       
-        <div className=" h-full w-full xl-custom:w-[28%]">
-            <main className="h-full">{children}</main>
+        <div className="flex justify-between items-center h-screen    bg-[#FFFEFE]">
+            <img src="/auth.png" className="h-full p-2 rounded-[20px] hidden xl-custom:block"></img>
+        <div className="  h-full w-full flex justify-center items-center">
+            <main className="  h-full w-[90%] ">{children}</main>
         </div>
         </div>
         

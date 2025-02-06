@@ -10,7 +10,7 @@ exports.googleCallBackService= async(googleUser)=>{
     if (!user) {
         user = new User({
             firstName: googleUser.name.givenName,
-            lastName: googleUser.name.familyName,
+            lastName: googleUser.name.familyName || " ",
             email: googleUser.emails[0].value,
             provider: googleUser.provider, 
             googleId: googleUser.id,

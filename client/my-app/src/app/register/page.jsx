@@ -7,15 +7,15 @@ import Image from "next/image";
 export default function register() {
     return (
         <>
-            <div className=" flex flex-col justify-center items-center h-full gap-4 pb-14 ">
+            <div className=" flex flex-col justify-center items-center h-full w-full bg-white pb-14 xl-custom:w-[100%]">
                 <Image src="/logo.png" width={200} height={200} priority alt="scrumX" />
 
                 {/* upper inidcate text */}
                 <div className="flex flex-col gap-2 w-full justify-center items-center ">
-                    <h2 className="text-textColor font-poppins font-regular text-xl ">
+                    <h2 className="text-textColor font-poppins font-regular text-l ">
                         Sign in to <span className="font-bold">ScrumX</span>
                     </h2>
-                    <p className="text-gray-500 font-poppins font-light text-normal text-center">
+                    <p className="text-gray-500 font-poppins font-light text-normal text-center text-xs py-2">
                         Welcome to scrumX please enter your email
                     </p>
                 </div>
@@ -35,11 +35,11 @@ export default function register() {
                     >
                         {({ isSubmitting }) => (
                             <Form className="flex flex-col py-2 ">
-                                <LoginInputField name="email" placeholder="Enter e-mail" id="email w-[100%]"></LoginInputField>
+                                <LoginInputField name="email" placeholder="Enter e-mail" id="email "></LoginInputField>
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-blue-500 text-white py-2 rounded-lg mt-3 hover:bg-blue-600 transition"
+                                    className="w-full text-sm bg-blue-500 text-white py-2 rounded-lg mt-3 hover:bg-blue-600 transition"
                                 >
                                     {isSubmitting ? "Confirm & Continue" : "Confirm & Continue"}
                                 </button>

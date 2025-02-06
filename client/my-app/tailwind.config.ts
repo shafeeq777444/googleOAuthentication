@@ -29,7 +29,8 @@ export default {
         primaryDark: "#323333", //welcome card
       },
       screens:{
-        'xl-custom': '1554px'
+        'xl-custom': '1035px',
+        "xll-custom": "1500px"
       }
     },
   },
